@@ -68,11 +68,16 @@ class CareerAgent(BaseAgent):
 
     def get_experience_summary(self):
 
+        # create a header in markdown format for the work experience section
         experience_text = "# Work Experience\n\n"
+
+        #loop through the experience list and format each job in markdown
         for job in self.experience:
             experience_text += f"## {job['title']} at {job['company']}\n"
             experience_text += f"**{job['period']}**\n\n"
             experience_text += "**Responsibilities:**\n"
+
+            # iterate through the responsibilities and format them as a markdown list
             for resp in job['responsibilities']:
                 experience_text += f"- {resp}\n"
             experience_text += "\n"
