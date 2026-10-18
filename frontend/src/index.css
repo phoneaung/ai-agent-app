@@ -78,4 +78,4 @@
   .agent-avatar-placeholder {
     @apply w-16 h-16 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold mx-auto;
   }
-}xs
+}
