@@ -1,0 +1,8 @@
+# Activate on macOS/Linux
+source venv/bin/activate
+
+# Activate on Windows
+venv\Scripts\activate
+
+# Deactivate works on all platforms
+conda deactivate
